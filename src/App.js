@@ -1,11 +1,14 @@
 import "./App.css";
 import Row from "./Row";
 import requests from "./requests";
+import Banner from "./Banner";
+import Nav from "./Nav";
 
 function App() {
   return (
     <div className="App">
-      <h1>RYUFLIX</h1>
+      <Nav />
+      <Banner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
@@ -23,3 +26,5 @@ function App() {
 }
 
 export default App;
+
+//https://www.youtube.com/watch?v=XtMThy8QKqU 1:35:37
